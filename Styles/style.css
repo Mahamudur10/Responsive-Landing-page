@@ -144,6 +144,23 @@ main>section {
     margin-bottom: 0px;
 }
 
+.feature-architech img {
+    width: 100%;
+}
+
+#experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+#experience-year {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 /* Some fact related style */
 .facts-container {
     display: grid;
@@ -202,7 +219,8 @@ main>section {
 @media screen and (max-width: 576px) {
 
     .navbar,
-    .teams {
+    .teams,
+    .featurs {
         flex-direction: column;
     }
 
@@ -222,6 +240,12 @@ main>section {
         margin-left: 20px;
     }
 
+    #experience-badge {
+        margin: 20px;
+        margin-left: 20px;
+        padding: 35px 32px;
+    }
+
     .fact-card {
         margin: 0 auto;
     }
@@ -234,12 +258,20 @@ main>section {
 
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams {
+
+    .teams,
+    .featurs {
         flex-direction: column;
     }
 
     .our-feature {
         margin: 50px auto;
+    }
+
+    #experience-badge {
+        margin: 20px;
+        margin-left: 20px;
+        padding: 35px 32px;
     }
 
     .facts-container {
