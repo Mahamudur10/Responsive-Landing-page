@@ -44,7 +44,8 @@
     border: none;
 }
 
-main {
+main,
+footer {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -119,6 +120,30 @@ main>section {
     font-weight: 500;
 }
 
+/*Feature section realated style*/
+.featurs {
+    gap: 140px;
+}
+
+#feature-section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-card {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.feature-card .feature-section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 /* Some fact related style */
 .facts-container {
     display: grid;
@@ -150,19 +175,29 @@ main>section {
 .fact-description {
     max-width: 540px;
 }
+
 /* sponser related styles */
-.sponsor-info{
+.sponsor-info {
     max-width: 540px;
     margin: 50px auto;
     text-align: center;
 }
-.sponsor-companies{
+
+.sponsor-companies {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
-.sponsor-companies img{
+
+.sponsor-companies img {
     filter: grayscale(100%);
 }
+
+.copyright-footer {
+    text-align: center;
+    padding: 16px 0px;
+    margin: 100px 0px;
+}
+
 /* Responsive Media query */
 @media screen and (max-width: 576px) {
 
@@ -174,7 +209,7 @@ main>section {
     .team-image-container,
     .facts-container,
     .sponsor-companies {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .facts-container {
@@ -190,7 +225,8 @@ main>section {
     .fact-card {
         margin: 0 auto;
     }
-    .sponsor-companies{
+
+    .sponsor-companies {
         justify-items: center;
         gap: 30px;
     }
@@ -205,13 +241,15 @@ main>section {
     .our-feature {
         margin: 50px auto;
     }
+
     .facts-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
         justify-items: center;
     }
+
     .sponsor-companies {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 8px;
     }
 }
